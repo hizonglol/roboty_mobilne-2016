@@ -1,0 +1,81 @@
+\documentclass[a4paper]{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{hyperref}
+
+\title{Roboty mobilne - projekt}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+
+\item Skład grupy:
+
+Dominik Hebda 209168 \\
+Filip Malinowski 209193
+
+\item Opis projektu:
+
+Wykonamy egzoszkielet dłoni sterowany siłowo poprzez odczyty z czujników nacisku umieszczonych wewnątrz egzoszkieletu.
+
+\item Założenia projektowe:
+
+Egzoszkielet powinien wspomagać ruchy dłoni, uruchamiając się dopiero po napotkaniu większego oporu przez dłoń. Oznacza to tyle, że jeśli palce naciskając na wnętrze obudowy wywrą siłę większą od pewnego progu to egzoszkielet uruchomi napędy. W normalnej pracy egzoszkielet powinien być wyłączony, a napędy przegubów powinny działać jako prądnice, które w trakcie normalnego ruchu człowieka powinny ładować akumulatory.
+Do zrealizowania wspomagania ruchu palców wnętrze rękawicy będzie wyposażone w czujniki ciśnienia zalane gumą, badające nacisk odpowiednich części dłoni na wnętrze egzoszkieletu.
+
+Sterowanie będzie zrealizowane za pomocą pętli histerezy połączonej z regulatorem PID. Gdy siła nacisku dojdzie do progu zadanego w programie sterowania, uruchomi się regulator, którego zadaniem będzie utrzymywanie siły nacisku palców na wnętrze obudowy na poziomie będącym przeskalowaniem w dół rzeczywistej siły nacisku potrzebnej do wykonania ruchu.
+
+\item Plan pracy:
+
+W planie pracy naszego projektu przewidujemy trzy kamienie milowe:
+\begin{enumerate}[I -]
+\item przeprowadzenie badań na temat materiałów, napędów, zasilania, sterowania, sensorów oraz oprogramowania odpowiadającym naszym założeniom projektowym
+\item opis teoretyczny opracowanej przez nas konstrukcji egzoszkieleu ręki
+\item symulacja ręki realizująca opis teoretyczny
+\end{enumerate}
+
+\begin{samepage}
+\item Podział prac:
+
+Podział prac zdefiniowaliśmy do drugiego kamienia milowego. Trzeci sprecyzujemy po wykonaniu pierwszego.
+\begin{enumerate}[I]
+\item kamień milowy:
+\begin{itemize}
+\item Dominik Hebda: \\
+materiały, zasilania, sensory
+\item Filip Malinowski \\
+napędy, oprogramowanie, sterowanie
+\end{itemize}
+\item kamień milowy:
+\begin{itemize}
+\item Dominik Hebda: \\
+opis techniczny - struktura, rozmieszczenie napędów i sensorów, konstrukcja przegubów
+\item Filip Malinowski \\
+opis kinematyczny egzoszkieletu dłoni oraz algorytmy sterowania
+\end{itemize}
+\end{enumerate}
+\end{samepage}
+
+\item Kosztorys:
+
+Nie przewidujemy kosztów związanych z wykonywaniem projektu.
+
+\item Doręczenie:
+\begin{enumerate}[I]
+\item kamień milowy - 5. kwietnia 2016
+\item kamień milowy - 26. kwietnia 2016
+\item kamień milowy - 31. maja 2016
+\end{enumerate}
+
+\item Zarządzanie projektem:
+\begin{itemize}
+\item Git - do przechowywania i rozwijania dokumentacji oraz oprogramowania związanego z projektem.
+\href{https://github.com/hizonglol/roboty_mobilne-2016}{Adres internetowy repozytorium.}
+\item LaTeX - do tworzenia dokumentacji projektu
+\end{itemize}
+\end{enumerate}
+
+\end{document}
