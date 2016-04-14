@@ -23,17 +23,18 @@ Wykonamy egzoszkielet dłoni sterowany siłowo poprzez odczyty z czujników naci
 
 \item Założenia projektowe:
 
-Egzoszkielet powinien wspomagać ruchy dłoni, uruchamiając się dopiero po napotkaniu większego oporu przez dłoń. Oznacza to tyle, że jeśli palce naciskając na wnętrze obudowy wywrą siłę większą od pewnego progu to egzoszkielet uruchomi napędy. W normalnej pracy egzoszkielet powinien być wyłączony, a napędy przegubów powinny działać jako prądnice, które w trakcie normalnego ruchu człowieka powinny ładować akumulatory.
-Do zrealizowania wspomagania ruchu palców wnętrze rękawicy będzie wyposażone w czujniki ciśnienia zalane gumą, badające nacisk odpowiednich części dłoni na wnętrze egzoszkieletu.
-
+Egzoszkielet powinien wspomagać ruchy dłoni, uruchamiając się dopiero po napotkaniu większego oporu przez dłoń. Oznacza to tyle, że jeśli palce naciskając na wnętrze obudowy wywrą siłę większą od pewnego progu to egzoszkielet uruchomi napędy.
+Do zrealizowania odczytu nacisku palców wnętrze rękawicy będzie wyposażone w czujniki nacisku zmieniające pod wpływem nacisku swoją rezystancję, badające w ten sposób nacisk odpowiednich części dłoni na wnętrze egzoszkieletu.
 Sterowanie będzie zrealizowane za pomocą pętli histerezy połączonej z regulatorem PID. Gdy siła nacisku dojdzie do progu zadanego w programie sterowania, uruchomi się regulator, którego zadaniem będzie utrzymywanie siły nacisku palców na wnętrze obudowy na poziomie będącym przeskalowaniem w dół rzeczywistej siły nacisku potrzebnej do wykonania ruchu.
+
+W pracy energooszczędnej egzoszkielet powinien być wyłączony, a napędy przegubów powinny działać jako prądnice, które w trakcie normalnego ruchu człowieka powinny ładować akumulatory.
 
 \item Plan pracy:
 
 W planie pracy naszego projektu przewidujemy trzy kamienie milowe:
 \begin{enumerate}[I -]
-\item przeprowadzenie badań na temat materiałów, napędów, zasilania, sterowania, sensorów oraz oprogramowania odpowiadającym naszym założeniom projektowym
-\item opis teoretyczny opracowanej przez nas konstrukcji egzoszkieleu ręki
+\item przeprowadzenie badań na temat materiałów, napędów, zasilania, sensorów, warstwy sprzętowej realizującej pomiary i algorytm oraz schematu blokowego algorytmu sterowania odpowiadającym naszym założeniom projektowym
+\item opis teoretyczny opracowanej przez nas konstrukcji egzoszkieletu ręki
 \item symulacja ręki realizująca opis teoretyczny
 \end{enumerate}
 
@@ -48,7 +49,7 @@ Podział prac zdefiniowaliśmy do drugiego kamienia milowego. Trzeci sprecyzujem
 \item Dominik Hebda: \\
 materiały, zasilania, sensory
 \item Filip Malinowski \\
-napędy, oprogramowanie, sterowanie
+napędy, warstwa sprzętowa, schemat blokowy algorytmu
 \end{itemize}
 \item kamień milowy:
 \begin{itemize}
@@ -65,7 +66,7 @@ Nie przewidujemy kosztów związanych z wykonywaniem projektu.
 
 \item Doręczenie:
 \begin{enumerate}[I]
-\item kamień milowy - 5. kwietnia 2016
+\item kamień milowy - 12. kwietnia 2016
 \item kamień milowy - 26. kwietnia 2016
 \item kamień milowy - 31. maja 2016
 \end{enumerate}
