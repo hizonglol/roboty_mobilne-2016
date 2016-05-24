@@ -7,7 +7,7 @@
 \usepackage{float}
 \author{}
 
-\title{Roboty mobilne - I kamień milowy}
+\title{Roboty mobilne - II kamień milowy}
 \date{}
 
 \begin{document}
@@ -30,9 +30,12 @@ Do naszego projektu użyjemy silników podobnych lub trochę większych rozmiar�
 
 \item Warstwa sprzętowa:
 
-Do realizacji oprogramowania rękawicy skorzystamy z mikrokontrolera
+Do realizacji oprogramowania rękawicy można skorzystać z mikrokontrolera
 \href{http://www.microchip.com/wwwproducts/en/PIC18F4431}{PIC18F4431}.
-Jeden mikroprocesor będzie obsługiwać jeden palec rękawicy. W mikrokontrolerze wykorzystamy osiem kanałów PWM, osiem pinów GPIO oraz 8 kanałów przetwornika ADC. Do sterowania silnikami w jednym palcu wykorzystamy cztery mostki H. Specyfikacja mikroprocesora znajduje się w załączonym pliku 39616d.pdf.
+Jeden mikroprocesor będzie obsługiwać jeden palec rękawicy. W mikrokontrolerze trzeba wykorzystać 4 kanały PWM, 12 pinów GPIO oraz 8 kanałów przetwornika ADC. Do sterowania silnikami w jednym palcu wykorzystamy 2 mostki H. Specyfikacja mikroprocesora znajduje się w załączonym pliku 39616d.pdf.
+
+Wykorzystywane będą mostki 
+\href{https://www.sparkfun.com/datasheets/Robotics/TB6612FNG.pdf}{TB6612FNG}. Są to dwukanałowe sterowniki silników DC. Ich prąd ciągły to 1.2A, a chwilowy to 3.2A. Udostępniają tryb Standby który również zostanie wykorzystany do przechodzenia rękawicy w tryb oszczędzania energii. Zasilanie logiki tego układu jest kompatybilne z mikroukładami o zasilaniu 3.3V. Zasilanie silników w zakresie 4.5 do 15V. Schemat połączenia zasilania znajduje się w pliku TB6612\_schemat.
 
 
 \item Algorytm:
